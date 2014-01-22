@@ -1,8 +1,8 @@
-# Lucky Ajax 
- 
-## Learning Competencies 
+# Lucky Ajax
 
-## Summary 
+## Learning Competencies
+
+## Summary
 
  We're going to practice converting a working **Sinatra+ActiveRecord** app into a **Sinatra+ActiveRecord+jQuery+AJAX** app. Specifically, we're going to take an application that reloads an entire page every time the user submits a form into one that just updates the portion of the DOM that needs to change.
 
@@ -53,11 +53,11 @@ If you cannot answer these questions, you'll have a tough time implementing thin
 ### Submit Your Code
 
 Once you have a version of the challenge working that doesn't relaod the entire page, go ahead and submit your solution. Any files you changed from the application skeleton should be added to the gist.
- 
+
 
 ## Releases
-### Release 0 
+### Release 0
 
-## Optimize Your Learning 
+## Optimize Your Learning
 
 ## Resources

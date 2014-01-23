@@ -66,4 +66,4 @@ application skeleton should be added to the gist.
 
 ## Resources
 
-* _No Resources Provided:  Use your noodle and puzzle it out_
+_No Resources Provided.  Use your noodle and puzzle it out!_

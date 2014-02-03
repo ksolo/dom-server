@@ -9,8 +9,7 @@
 ## Summary
 
 We're going to practice converting a working **Sinatra+ActiveRecord** app into
-a **Sinatra+ActiveRecord+jQuery+AJAX** app. Specifically, we're going to take
-an application that reloads an entire page every time the user submits a form
+a **Sinatra+ActiveRecord+jQuery+AJAX** app. Specifically, we're going to take an application that reloads an entire page every time the user submits a form
 into one that just updates the portion of the DOM that needs to change.
 
 ## Releases

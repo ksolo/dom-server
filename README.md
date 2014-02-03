@@ -2,10 +2,9 @@
 
 ## Learning Competencies
 
-* Convert an application that uses full-page-reloads to one that
-  uses AJAX to update just the portions of the DOM that need updating.
-* Deepen your understanding of jQuery selectors and DOM manipulation.
-* Practice coming into an existing codebase and extending it.
+* Use AJAX actions to change views based on asynchronous data 
+* Implement synchronous / asynchronous requests in a web application
+* Enter into an existing code base and extend it
 
 ## Summary
 
@@ -40,7 +39,6 @@ code need to change. Specifically:
 4. Is it necessary to change any of the Sinatra routes?
 5. Where should your JavaScript code that handles the AJAX and DOM updates go?
 
-
 ### Release 2: AJAXify It!
 
 The following questions might help you get your bearings:
@@ -58,12 +56,6 @@ The following questions might help you get your bearings:
 If you cannot answer these questions, you'll have a tough time implementing
 things. Take your time, use Google, and think it through!
 
-### Release 3:  Submit it
-
-Once you have a version of the challenge working that doesn't relaod the entire
-page, go ahead and submit your solution. Any files you changed from the
-application skeleton should be added to the gist.
-
 ## Resources
 
-_No Resources Provided.  Use your noodle and puzzle it out!_
+* [jQuery AJAX](http://api.jquery.com/jquery.ajax/)

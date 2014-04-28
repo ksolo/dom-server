@@ -23,7 +23,7 @@ After you download the skeleton, you should `bundle` your gems and run
 
 ```bash
 $ bundle
-$ shotgun
+$ bundle exec shotgun
 ```
 
 ### Release 1: Figure Out What to Change

@@ -12,12 +12,11 @@ $(document).ready(function () {
     // Step 2 - Tell the browser to chill
     event.preventDefault();
 
-    // Step 3 - Generating a random number using the Math module https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
-    var random = Math.floor(Math.random() * 6) + 1;
-
+    // This time we will use the value from the script tags
+     
     // Step 4 - Ajax
     var url = $(this).attr('action');
-    var data = {value: random};
+    var data = {value: valueOfRoll};
 
     $.post(url, data, function(response){
       // Step 5 - replace contents of div#die

@@ -19,10 +19,19 @@ $(document).ready(function () {
     var url = $(this).attr('action');
     var data = {value: random};
 
-    $.post(url, data, function(response){
+    $.post(url, data, function(jsonResponse){
       // Step 5 - replace contents of div#die
-      $('#die').html(response);
-    });
+      // Now we need to create a template for the json response
+      function imgTemplate(roll) {
+        var src = "src='/" + roll.value + ".png'";
+        var title = "title='" + roll.value + "'";
+        return "<img " + src + " " + title + " alt='the roll'>" 
+      }
+
+      var img = imgTemplate(jsonResponse.roll);
+
+      $('#die').html(img);
+    }, "json");
   });
 
 });

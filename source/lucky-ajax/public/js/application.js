@@ -12,12 +12,11 @@ $(document).ready(function () {
     // Step 2 - Tell the browser to chill
     event.preventDefault();
 
-    // Step 3 - Generating a random number using the Math module https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
-    var random = Math.floor(Math.random() * 6) + 1;
+    // Skipping Step 3 since the form will have the data
 
     // Step 4 - Ajax
     var url = $(this).attr('action');
-    var data = {value: random};
+    var data = $(this).serialize() // I can just use this method now to generate the data
 
     $.post(url, data, function(response){
       // Step 5 - replace contents of div#die

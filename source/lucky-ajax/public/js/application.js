@@ -12,12 +12,14 @@ $(document).ready(function () {
     // Step 2 - Tell the browser to chill
     event.preventDefault();
 
-    // Step 3 - Generating a random number using the Math module https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
-    var random = Math.floor(Math.random() * 6) + 1;
+    // Skipping step 3 - pulling data from the dom not generating random
 
     // Step 4 - Ajax
     var url = $(this).attr('action');
-    var data = {value: random};
+
+    // The data- attribute is new(ish) to HTML5
+    // Other ways of getting data include text(), html(), and attr() (not exhaustive list)
+    var data = { value: $(this).data('die-value') }
 
     $.post(url, data, function(response){
       // Step 5 - replace contents of div#die

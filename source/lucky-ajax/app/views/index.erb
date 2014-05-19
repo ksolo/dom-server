@@ -8,7 +8,7 @@
 
   <div id="die">
     <% if @roll %>
-      <img src="/<%= @roll.value %>.png" title="<%= @roll.value %>" alt="the roll">
+      <%= erb :_die_roll %>
     <% end %>
   </div>
 

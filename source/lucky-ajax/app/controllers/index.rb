@@ -7,5 +7,9 @@ end
 post '/rolls' do
   @roll = Roll.create(value: params[:value])
 
-  erb :index  # HINT: what does this do? what should we do instead?
+  if request.xhr?
+    erb :_die_roll, layout: false
+  else
+    erb :index  # HINT: what does this do? what should we do instead?
+  end
 end
